@@ -1,0 +1,346 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Courier New', sans-serif;
+  
+}
+
+#banner{
+  background:linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,.8)),
+	url(../images/background.png);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.banner-main{
+  background-color: rgb(200, 200, 200);
+  z-index: 10;
+	top: 0;
+	padding: 20px;
+  width: 100%;
+  position: fixed;
+}
+
+.logo{
+	width: 200px;
+	position: relative;
+	margin-left: 10px;	
+}
+
+
+.login-header{
+  display: flex;
+  justify-content: center;
+}
+.login-header h1{
+  font-size: 3rem;
+  color: #000;
+  position: absolute;
+  top: 20%;
+}
+
+/* Log In Menu Styles*/
+.login-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  padding: 80px 40px 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.form p {
+  text-align: left;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+.form p a{
+  color:darkgoldenrod;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 2;
+}
+.form p a:hover{
+  text-decoration:underline;
+}
+
+.form h2 {
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+  
+.form .input-group {
+  position: relative;
+}
+.form .input-group input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background-color: transparent;
+  color: inherit;
+}
+.form .input-group label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.3s ease-out;
+}
+/* Moves label of input to top when clicked, typing, and has content*/
+.form .input-group input:focus + label,
+.form .input-group input:valid + label {
+  transform: translateY(-18px);
+  color: white;
+  font-size: 0.8rem;
+}
+
+.submit-btn {
+  display: block;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  background: #d3d3d3;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.submit-btn:hover{
+  background-color:cadetblue;
+  transition: 0.3s;
+}
+
+
+
+
+/* SIDE NAV BAR */
+
+/* style for clickable button*/
+.wrapper{
+  height: 100%;
+  width: 300px;
+  position: relative;
+  top: 20px;
+}
+
+.wrapper .menu-btn{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: #212121;
+  color: #fff;
+  height: 45px;
+  width: 45px;
+  z-index: 99;
+  border: 1px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+/* tilde selects all 2nd(or preceeding) sequence after first sequence*/
+
+/*menu button animation*/	
+#btn:checked ~ .menu-btn{
+  left: 20px;
+}
+.wrapper .menu-btn i{
+  position: absolute;
+  font-size: 23px;
+  transition: all 0.5s;
+  
+}
+.wrapper .menu-btn i.fa-times{
+  opacity: 0;
+
+}
+
+/*checking/unchecking the hidden check box opens/closes menu*/
+#btn:checked ~ .menu-btn i.fa-times{
+  opacity: 1;
+  transform: rotate(-180deg);
+}
+#btn:checked ~ .menu-btn{
+	background: #fff;
+	color: #212121;
+}
+#btn:checked ~ .menu-btn i.fa-bars{
+  opacity: 0;
+  transform: rotate(180deg);
+  
+}
+#sidebar{
+  position: fixed;
+  height: 100%;
+  width: 270px;
+  overflow: hidden;
+  left: -270px;
+  transition: all 0.5s ease;
+  z-index: 1;
+}
+#btn:checked ~ #sidebar{
+  left: 0;
+}
+#sidebar .title{
+  line-height: 65px;
+  text-align: center;
+  background: #333;
+  padding-left: 50px;
+  font-size: 25px;
+  font-weight: 600;
+  color: #f2f2f2;
+  border-bottom: 1px solid #222;
+}
+#sidebar ul{
+  position: absolute;
+  background: #404040;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+}
+
+/* Active button style*/
+#sidebar ul li.active{
+    background-color: #d3d3d3;
+}
+#sidebar ul li.active a{
+	color:            #000;	
+}
+#sidebar ul li.active a:hover{
+	color: #f2f2f2;
+}
+
+#sidebar ul li{
+  padding-left: 20px;
+  width: 100%;
+  line-height: 50px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid #333;
+  transition: all 0.3s ease;
+}
+
+#sidebar ul li:hover{
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  background-color: #111111;
+  color: #f2f2f2;
+}
+
+
+#sidebar ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 550;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+
+
+
+/*end of nav bar styles*/
+
+
+/* Responsive Design */
+@media screen and (max-width:  700px){
+	
+	#banner{
+		height: 100vh;	
+	}
+	.logo{
+		margin-left: -10px;
+    width: 100px;	
+	}
+  img{
+    width: 80vw;
+  }
+	.newsletter{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 300px;
+  }
+	#menuBtn a{
+		font-size: 18px;
+	}
+  #sidebar ul li a{
+    font-size: 16px;
+
+  }
+  .login-header h1{
+    font-size: 2rem;
+    left: 35%;
+    
+  }
+  .login{
+    margin: 50px 100px;
+    padding-top: 10%;
+    position: relative;
+  }
+
+  .form h2{
+    font-size: 18px;
+  }
+  
+  .form {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    padding: 30px 40px 40px;
+  }
+
+}
+
+
+@media  screen and (max-height:  450px) {
+
+  #banner{
+    height: 150vh;
+  }
+  
+  .logo{
+		margin-left: -10px;
+    width: 120px;	
+	}
+  .login-header h1{
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+  #sidebar ul li a{
+    font-size: 15px;
+   line-height: 35px;
+  }
+  .login-wrapper{
+    transform: translateY(100px);
+  }
+}
+
+

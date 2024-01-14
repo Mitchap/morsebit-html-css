@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="logo/png" href="../images/shorter.png"/>
+    <link rel="stylesheet" href="../styles/product.css"></a>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Shop</title>
+   
+</head>
+<body>
+<section id="banner">
+<div class="banner-text">
+
+    <div class="banner-main">
+            <a href="index.html"><img src="../images/logo.png" class="logo" alt="logo"></a>
+            <div class="shop-header"><h1>Shop</h1></div>
+<a href="shop.html"><i class="fa-solid fa-arrow-left"> BACK</i></a>
+
+               
+
+<!-- Navbar -->
+<div class="wrapper" >
+    <input type="checkbox" id="btn" hidden>
+
+<!-- label tag is given for attribute to bound it to id tag with same name-->
+    <label for="btn" class="menu-btn">
+
+<!-- i tag uses class from font awesome for icons-->
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+    </label>
+    
+    <nav id="sidebar">
+      <div class="title">Side Menu</div>
+      <ul>
+    <li><a href="index.html" >Home</a></li>
+    <li class="active"><a class="active" href="shop.html">Shop</a></li>
+    <li><a href="about.html">About us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="login.html">Log In</a></li>
+
+      </ul>
+    </nav>
+    </div>
+    </div>
+    
+</div>
+
+<!------------STYLE SINGLE PRODUCT--------------->
+
+<div class="single">
+
+  <div class="row">
+    <div class="column">
+      <img src="../images/products/jacket5.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="#">
+        <div class="product-desc">
+
+          <h2>MorseBit X-22 Hydro-Tech</h2>
+          <p>Functionally waterproof, windproof, and breathable on the go. Can be used in sling mode when
+            user gets too hot.
+           <p class="discount">$399.99</p><p class="price">$639.99</p>
+          
+          </p>
+        </div>
+        <label for="size">Size</label>
+        <div class="select">
+          <input type="radio" name="size" id="small" value="small" />
+          <label for="small">Small<span class="red"></span></label>
+  
+          <input type="radio" name="size" id="medium" />
+          <label for="medium">Medium<span class="green"></span></label>
+  
+          <input type="radio" name="size" id="large" />
+          <label for="large">Large<span class="yellow"></span></label> 
+
+          <input type="radio" name="size" id="large" />
+          <label for="large">Extra Large<span class="yellow"></span></label> 
+        </div>
+
+        <label for="select">Color</label>
+        <div class="select">
+        <input type="radio" name="color" id="red" value="red" />
+        <label for="red">Khaki<span class="red"></span></label>
+
+        <input type="radio" name="color" id="green" />
+        <label for="green">Green<span class="green"></span></label>
+
+        <input type="radio" name="color" id="yellow" />
+        <label for="yellow">Black<span class="yellow"></span></label> 
+    </div>
+
+        <a href="login.html"><input type="button" value="Check Out"></a>
+        
+      </form>
+    </div>
+</div>
+
+</div>
+
+<!------------------------------------>
+
+
+
+
+</section>
+</body>
+</html> 

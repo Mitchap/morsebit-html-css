@@ -1,0 +1,2 @@
+use jacket2 for product viewing
+belt 1 has add to cart
