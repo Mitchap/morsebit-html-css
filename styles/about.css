@@ -23,7 +23,7 @@ body{
 }
 
 .logo{
-	width: 200px;
+	width: 80px;
 	position: relative;
 	margin-left: 10px;	
 }
@@ -39,6 +39,8 @@ body{
   position: absolute;
   top: 20%;
   z-index: 9;
+  margin: 15px auto;
+  
 }
 
 .newsletter{
@@ -308,7 +310,7 @@ input[type=submit]:hover {
 	
 	.logo{
 		margin-left: -10px;
-    width: 100px;	
+    width: 60px;		
 	}
   img{
     width: 80vw;
@@ -364,7 +366,7 @@ input[type=submit]:hover {
 
   .logo{
 		margin-left: -10px;
-    width: 120px;	
+    width: 60px;	
 	}
   .about-header h1{
     font-size: 1.5rem;

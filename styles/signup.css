@@ -8,7 +8,7 @@
 
 #banner{
   background:linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,.8)),
-	url(../images/background.png);
+	url(../images/background3.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -24,7 +24,7 @@
 }
 
 .logo{
-	width: 200px;
+	width:90px;
 	position: relative;
 	margin-left: 10px;	
 }
@@ -276,7 +276,8 @@
 	}
 	.logo{
 		margin-left: -10px;
-    width: 100px;	
+    width: 60px;		
+
 	}
   img{
     width: 80vw;
@@ -298,6 +299,7 @@
   .signup-header h1{
     font-size: 2rem;
     left: 35%;
+    margin: 15px auto;
     
   }
   .signup{
@@ -329,7 +331,7 @@
   
   .logo{
 		margin-left: -10px;
-    width: 120px;	
+    width: 60px;		
 	}
   .signup-header h1{
     font-size: 1.5rem;

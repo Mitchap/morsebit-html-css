@@ -25,7 +25,7 @@ body{
 }
 
 .logo{
-	width: 200px;
+	width: 100px;
 	position: relative;
 	margin-left: 10px;	
 }
@@ -94,7 +94,6 @@ a input[type=button]:hover {
   background-color: #fff;
   color: #000;
   border: 1px solid #000;
-  float: right;
 }
 
 
@@ -166,7 +165,10 @@ a input[type=button]:hover {
   border-top-left-radius:85%;
   border-bottom-right-radius: 85%;
 }
-
+.option{
+ font-weight: bold;
+ font-size: 1.3rem;
+}
 hr{
   background: #fff;
 	height: 4px;
@@ -363,7 +365,7 @@ hr{
 	}
 	.logo{
 		margin-left: -10px;
-    width: 100px;	
+    width: 50px;	
 	}
   img{
     width: 60vw;
@@ -482,5 +484,5 @@ hr{
   }
   }
   input[type=button] {
-    width: 15vw;
+    width: 120px;
   }
