@@ -43,15 +43,7 @@ body{
   
 }
 
-.newsletter{
-  align-items: center;
-  color: #000;
-  display: flex;
-  justify-content: center;
-  padding-top: 10%;
-  position: relative;
-  margin-bottom: 100px;
-}
+
 
 .about-us{
   align-items: center;
@@ -88,12 +80,13 @@ img {
 /* News Letter Styling*/
 
 .newsletter{
-  align-items: center;
   color: #000;
+  align-items: center;
   display: flex;
   justify-content: center;
+  padding-top: 10%;
   margin-top: -100px;
-  position: relative;
+  margin-bottom: 100px;
 }
 
 form {
@@ -304,6 +297,37 @@ input[type=submit]:hover {
 
 /*end of nav bar styles*/
 
+/* Footer styling */
+.the-footer{
+  height: 180px;
+  align-items: center;
+  display: flex;
+  padding: 100px;
+  color: rgb(211, 211, 211);
+  }
+
+  .social{
+    color: rgb(211, 211, 211);
+    font-size:2rem;
+  }
+  .items{
+    color: rgb(211, 211, 211);
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .foot-line{
+    border: 2px solid rgb(236, 236, 236);
+  }
+  .copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+  }
+  .division{
+    margin-bottom: 10px;
+  }
+
 
 /* Responsive Design */
 @media screen and (max-width:  700px){
@@ -316,9 +340,6 @@ input[type=submit]:hover {
     width: 80vw;
   }
 	.newsletter{
-    align-items: center;
-    display: flex;
-    justify-content: center;
     margin: 0 auto 100px auto;
     width: 300px;
   }
@@ -360,6 +381,16 @@ input[type=submit]:hover {
   #team p {
   font-size: 1rem;
 }
+.social{
+font-size: 1.3rem;
+}
+.items{
+font-size: 0.9rem;
+}
+.copyright{
+  font-size: 0.8rem;
+}
+
 }
 
 @media  screen and (max-height:  450px) {

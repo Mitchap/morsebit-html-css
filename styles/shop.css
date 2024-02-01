@@ -279,7 +279,40 @@ hr{
 
 /*end of nav bar styles*/
 
+/* Footer styling */
+.the-footer{
+  height: 180px;
+  align-items: center;
+  display: flex;
+  padding: 100px;
+  color: rgb(36, 36, 36);
+  }
 
+  .social{
+  color: rgb(36, 36, 36);
+
+    font-size:2rem;
+  }
+  .items{
+  color: rgb(36, 36, 36);
+
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  .foot-line{
+   border: 2px solid rgb(36, 36, 36);
+   width: 100%;
+
+  }
+  .copyright{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+  }
+  .division{
+    margin-bottom: 10px;
+  }
 /* Responsive Design */
 @media screen and (max-width:  700px){
 	
@@ -344,6 +377,15 @@ hr{
    
     font-size: 1rem;
   }
+  .social{
+    font-size: 1.3rem;
+    }
+    .items{
+    font-size: 0.9rem;
+    }
+    .copyright{
+      font-size: 0.8rem;
+    }
   }
 
 @media  screen and (max-height:  450px) {

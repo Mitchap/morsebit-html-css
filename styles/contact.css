@@ -1,46 +1,44 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Courier New', sans-serif;
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Courier New", sans-serif;
 }
 
-#banner{
-	background:linear-gradient(rgba(0,0,0, 0.4),rgba(0,0,0,.8)),
-	url(../images/background.png);
-	background-size: cover;
-	background-position: center;
-	height: 100vh;
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)),
+    url(../images/background.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
-.banner-main{
+.banner-main {
   background-color: rgb(200, 200, 200);
   z-index: 10;
-	top: 0;
-	padding: 20px;
+  top: 0;
+  padding: 20px;
   width: 100%;
   position: fixed;
 }
 
-.logo{
-	width: 90px;
-	position: relative;
-	margin-left: 10px;	
+.logo {
+  width: 90px;
+  position: relative;
+  margin-left: 10px;
 }
 
-
-.contact-header{
+.contact-header {
   display: flex;
   justify-content: center;
 }
-.contact-header h1{
+
+.contact-header h1 {
   font-size: 3rem;
   color: #000;
   position: absolute;
   top: 20%;
   margin: 15px auto;
-
 }
 
 /* Log In Menu Styles*/
@@ -69,14 +67,16 @@
   margin-top: -20px;
   margin-bottom: 20px;
 }
-.form p a{
+
+.form p a {
   color: white;
   font-weight: bold;
   text-decoration: none;
   z-index: 2;
 }
-.form p a:hover{
-  text-decoration:underline;
+
+.form p a:hover {
+  text-decoration: underline;
 }
 
 .form h2 {
@@ -84,10 +84,11 @@
   letter-spacing: 1px;
   margin-bottom: 2rem;
 }
-  
+
 .form .input-group {
   position: relative;
 }
+
 .form .input-group input {
   width: 100%;
   padding: 10px 0;
@@ -100,6 +101,7 @@
   background-color: transparent;
   color: inherit;
 }
+
 .form .input-group label {
   position: absolute;
   top: 0;
@@ -109,26 +111,30 @@
   pointer-events: none;
   transition: 0.3s ease-out;
 }
+
 /* Moves label of input to top when clicked, typing, and has content*/
-.form .input-group input:focus + label,
-.form .input-group input:valid + label {
+.form .input-group input:focus+label,
+.form .input-group input:valid+label {
   transform: translateY(-18px);
   color: white;
   font-size: 0.8rem;
 }
-#subject{
-  height:130px;
+
+#subject {
+  height: 130px;
   width: 300px;
   min-width: 200px;
-  max-width:300px;
-  max-height: 300px; 
+  max-width: 300px;
+  max-height: 300px;
   margin-top: 50px;
   background: rgba(0, 0, 0, 0.7);
   color: #fff;
 }
-#subject::placeholder{
+
+#subject::placeholder {
   color: #cccccc;
 }
+
 .submit-btn {
   display: block;
   margin-left: auto;
@@ -141,27 +147,24 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  
 }
-.submit-btn:hover{
-  background-color:cadetblue;
+
+.submit-btn:hover {
+  background-color: cadetblue;
   transition: 0.3s;
 }
-
-
-
 
 /* SIDE NAV BAR */
 
 /* style for clickable button*/
-.wrapper{
+.wrapper {
   height: 100%;
   width: 300px;
   position: relative;
   top: 20px;
 }
 
-.wrapper .menu-btn{
+.wrapper .menu-btn {
   position: absolute;
   left: 20px;
   top: 10px;
@@ -181,36 +184,38 @@
 
 /* tilde selects all 2nd(or preceeding) sequence after first sequence*/
 
-/*menu button animation*/	
-#btn:checked ~ .menu-btn{
+/*menu button animation*/
+#btn:checked~.menu-btn {
   left: 20px;
 }
-.wrapper .menu-btn i{
+
+.wrapper .menu-btn i {
   position: absolute;
   font-size: 23px;
   transition: all 0.5s;
-  
 }
-.wrapper .menu-btn i.fa-times{
-  opacity: 0;
 
+.wrapper .menu-btn i.fa-times {
+  opacity: 0;
 }
 
 /*checking/unchecking the hidden check box opens/closes menu*/
-#btn:checked ~ .menu-btn i.fa-times{
+#btn:checked~.menu-btn i.fa-times {
   opacity: 1;
   transform: rotate(-180deg);
 }
-#btn:checked ~ .menu-btn{
-	background: #fff;
-	color: #212121;
+
+#btn:checked~.menu-btn {
+  background: #fff;
+  color: #212121;
 }
-#btn:checked ~ .menu-btn i.fa-bars{
+
+#btn:checked~.menu-btn i.fa-bars {
   opacity: 0;
   transform: rotate(180deg);
-  
 }
-#sidebar{
+
+#sidebar {
   position: fixed;
   height: 100%;
   width: 270px;
@@ -219,10 +224,12 @@
   transition: all 0.5s ease;
   z-index: 1;
 }
-#btn:checked ~ #sidebar{
+
+#btn:checked~#sidebar {
   left: 0;
 }
-#sidebar .title{
+
+#sidebar .title {
   line-height: 65px;
   text-align: center;
   background: #333;
@@ -232,7 +239,8 @@
   color: #f2f2f2;
   border-bottom: 1px solid #222;
 }
-#sidebar ul{
+
+#sidebar ul {
   position: absolute;
   background: #404040;
   width: 100%;
@@ -241,34 +249,35 @@
 }
 
 /* Active button style*/
-#sidebar ul li.active{
-    background-color: #d3d3d3;
-}
-#sidebar ul li.active a{
-	color:            #000;	
-}
-#sidebar ul li.active a:hover{
-	color: #f2f2f2;
+#sidebar ul li.active {
+  background-color: #d3d3d3;
 }
 
-#sidebar ul li{
+#sidebar ul li.active a {
+  color: #000;
+}
+
+#sidebar ul li.active a:hover {
+  color: #f2f2f2;
+}
+
+#sidebar ul li {
   padding-left: 20px;
   width: 100%;
   line-height: 50px;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   border-bottom: 1px solid #333;
   transition: all 0.3s ease;
 }
 
-#sidebar ul li:hover{
+#sidebar ul li:hover {
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   background-color: #111111;
   color: #f2f2f2;
 }
 
-
-#sidebar ul li a{
+#sidebar ul li a {
   color: #f2f2f2;
   text-decoration: none;
   font-size: 20px;
@@ -278,91 +287,89 @@
   display: block;
 }
 
-
-
-
 /*end of nav bar styles*/
 
-
 /* Responsive Design */
-@media screen and (max-width:  700px){
-	
-	#banner{
-		height: 125vh;	
-	}
-	.logo{
-		margin-left: -10px;
-    width: 60px;	
-	}
-  img{
+@media screen and (max-width: 700px) {
+  #banner {
+    height: 125vh;
+  }
+
+  .logo {
+    margin-left: -10px;
+    width: 60px;
+  }
+
+  img {
     width: 80vw;
   }
-	.newsletter{
+
+  .newsletter {
     align-items: center;
     display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 300px;
   }
-	#menuBtn a{
-		font-size: 18px;
-	}
-  #sidebar ul li a{
-    font-size: 16px;
 
-  }
-  .contact-header h1{
-    font-size: 1.8rem;
-    left: 35%;
-    
-  }
-
-
-  .form h2{
+  #menuBtn a {
     font-size: 18px;
   }
-  
+
+  #sidebar ul li a {
+    font-size: 16px;
+  }
+
+  .contact-header h1 {
+    font-size: 1.8rem;
+    left: 35%;
+  }
+
+  .form h2 {
+    font-size: 18px;
+  }
+
   .form {
     position: relative;
     width: 100%;
     max-width: 300px;
     padding: 30px 40px 40px;
   }
-  #subject{
-    height:100px;
+
+  #subject {
+    height: 100px;
     width: 220px;
     min-width: 100px;
-    max-width:220px;
-    max-height: 150px; 
+    max-width: 220px;
+    max-height: 150px;
   }
-  .contact-wrapper{
+
+  .contact-wrapper {
     transform: translateY(70px);
   }
 }
 
-@media  screen and (max-height:  450px) {
-
-   #banner{
+@media screen and (max-height: 450px) {
+  #banner {
     height: 175vh;
   }
-  
-  .logo{
-		margin-left: -10px;
-    width: 60px;	
-	}
-  .contact-header h1{
+
+  .logo {
+    margin-left: -10px;
+    width: 60px;
+  }
+
+  .contact-header h1 {
     font-size: 1.8rem;
     margin-top: 10px;
   }
-  #sidebar ul li a{
+
+  #sidebar ul li a {
     font-size: 15px;
-   line-height: 35px;
+    line-height: 35px;
   }
-  .contact-wrapper{
+
+  .contact-wrapper {
     transform: translateY(170px);
   }
 }
-
-
-
-
