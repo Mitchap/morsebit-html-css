@@ -13,6 +13,9 @@ body{
 	background: #999999;
 	background-size: cover;
 	background-position: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .banner-main{
@@ -81,6 +84,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 1;
 }
 .products h2{
   font-size: 2em;
@@ -280,8 +284,9 @@ hr{
 /*end of nav bar styles*/
 
 /* Footer styling */
+
 .the-footer{
-  height: 180px;
+  height: 3rem;
   align-items: center;
   display: flex;
   padding: 100px;
@@ -316,9 +321,7 @@ hr{
 /* Responsive Design */
 @media screen and (max-width:  700px){
 	
-	#banner{
-		height: 125vh;	
-	}
+
 	.logo{
 		margin-left: -10px;
     width: 60px;	
@@ -377,6 +380,7 @@ hr{
    
     font-size: 1rem;
   }
+  
   .social{
     font-size: 1.3rem;
     }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="logo/png" href="../images/shorter.png"/>
-    <link rel="stylesheet" href="../styles/contact.css"></a>
+    <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <title>Log In</title>
    
@@ -16,7 +16,7 @@
 
     <div class="banner-main">
             <a href="index.html"><img src="../images/logo.png" class="logo" alt="logo"></a>
-            <div class="contact-header"><h1>Contact Us</h1></div>
+            <div class="login-header"><h1>Log In</h1></div>
            
         
 <!-- Navbar -->
@@ -37,40 +37,36 @@
     <li><a href="index.html" >Home</a></li>
     <li><a href="shop.html">Shop</a></li>
     <li><a href="about.html">About us</a></li>
-    <li class="active"><a  class="active" href="contact.html">Contact Us</a></li>
-    <li><a href="login.html">Log In</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li class="active"><a  class="active" href="login.html">Log In</a></li>
 
       </ul>
     </nav>
     </div>
     </div>
 </div>
+</section>
 
 
-
-<div class="contact-wrapper">
+<div class="login-wrapper">
   <form action="#" class="form">
-    <h2>Contact Us</h2>
-    <p>Swing by for a cup of coffee</p>
+    <h2>Login</h2>
     <div class="input-group">
-      <input type="text" name="contactUser" id="contactUser" required />
-      <label for="contactUser">Name</label>
+      <input type="text" name="loginUser" id="loginUser" required />
+      <label for="loginUser">User Name</label>
     </div>
     <div class="input-group">
-      <input type="email" name="signupUser" id="signupUser" required />
-      <label for="signupUser">Email</label>
+      <input type="password"name="loginPassword"
+        id="loginPassword" required/>
+      <label for="loginPassword">Password</label>
     </div>
-    <div class="input-group">
-      <textarea id="subject" name="subject" placeholder="Write Something..."></textarea>
-      <label for="subject">Subject</label>
-    </div>
-    <input type="submit" value="Submit" class="submit-btn" />
+    <input type="submit" value="Login" class="submit-btn" /> 
+    <p><a href="#">Forgot Password</a></p>
+    <p>Dont have an account? <a href="signup.html">Register</a></p>
   </form>
   
 </div>
 
-
-</section>
 
 </body>
 </html> 

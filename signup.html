@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="logo/png" href="../images/shorter.png"/>
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/signup.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-    <title>Log In</title>
+    <title>Sign Up</title>
    
 </head>
 <body>
@@ -16,7 +16,7 @@
 
     <div class="banner-main">
             <a href="index.html"><img src="../images/logo.png" class="logo" alt="logo"></a>
-            <div class="login-header"><h1>Log In</h1></div>
+            <div class="signup-header"><h1>Sign Up</h1></div>
            
         
 <!-- Navbar -->
@@ -45,29 +45,38 @@
     </div>
     </div>
 </div>
-
-
-
-<div class="login-wrapper">
-  <form action="#" class="form">
-    <h2>Login</h2>
-    <div class="input-group">
-      <input type="text" name="loginUser" id="loginUser" required />
-      <label for="loginUser">User Name</label>
-    </div>
-    <div class="input-group">
-      <input type="password"name="loginPassword"
-        id="loginPassword" required/>
-      <label for="loginPassword">Password</label>
-    </div>
-    <input type="submit" value="Login" class="submit-btn" /> 
-    <p><a href="#">Forgot Password</a></p>
-    <p>Dont have an account? <a href="signup.html">Register</a></p>
-  </form>
-  
-</div>
-
-
 </section>
+
+
+<div class="signup-wrapper">
+  <form action="#" class="form">
+    <h2>Sign Up</h2>
+    
+    <div class="input-group">
+      <input type="email" name="signupUser" id="signupUser" required />
+      <label for="signupUser">Email</label>
+    </div>
+    <div class="input-group">
+      <input type="text" name="signupUser" id="signupUser" required />
+      <label for="signupUser">First Name</label>
+    </div>
+    <div class="input-group">
+      <input type="text" name="signupUser" id="signupUser" required />
+      <label for="signupUser">Last Name</label>
+    </div>
+    <div class="input-group">
+      <input type="password"name="signupPassword"
+        id="signupPassword" required/>
+      <label for="signupPassword">Password</label>
+    </div>
+    <div class="input-group">
+      <input type="password"name="signupPassword"
+        id="signupPassword" required/>
+      <label for="signupPassword">Confirm Password</label>
+    </div>
+    <input type="submit" value="Sign me up" class="submit-btn" />
+    <p><a href="login.html">Already have an account</a></p>
+  </form>
+</div>
 </body>
 </html> 
