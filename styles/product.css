@@ -374,9 +374,7 @@ hr {
 
 /* Responsive Design */
 @media screen and (max-width: 700px) {
-  #banner {
-    height: 125vh;
-  }
+
   .logo {
     margin-left: -10px;
     width: 50px;
@@ -464,9 +462,7 @@ hr {
 }
 
 @media screen and (max-height: 450px) {
-  #banner {
-    height: 150vh;
-  }
+
 
   #sidebar ul li a {
     font-size: 15px;

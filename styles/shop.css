@@ -393,9 +393,7 @@ hr{
   }
 
 @media  screen and (max-height:  450px) {
-  	#banner{
-  	 height: 150vh;	
-  	}
+
 
     #sidebar ul li a{
       font-size: 15px;
